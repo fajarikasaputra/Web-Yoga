@@ -1,0 +1,196 @@
+:root {
+  --green: #1E5F74;
+  --main: #30475E;
+  --content: #222831;
+  --newButton: #352961;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: var(--main);
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  padding: 12px;
+  text-align: center;
+  background-color: var(--content);
+  color: white;
+}
+
+footer{
+  background-color: var(--content);
+  color: white;
+  text-align: center;
+  padding: 28px;
+}
+
+header > h1 > img {
+  width: 28px;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--content);
+}
+
+.input_section > h1 {
+  text-align: center;
+  color: white;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: var(--green); /* background tombol tambah buku */
+  color: white; /* warna teks tombol tambah buku */
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: white;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  background-color: var(--content);
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.search_section > h1 {
+  color: white;
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search_section > form > button {
+  background-color: var(--green); /* background tombol cari */
+  color: white; /* warna teks tombol cari */
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf {
+  background-color: var(--content);
+  margin: 16px 0 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.book_shelf > h1 {
+  text-align: center;
+  color: white;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book-item {
+  background-color: #162447;
+  padding: 8px 16px 16px 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book-item > h2,
+.book-item > p {
+  color: white;
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book-item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book-item > .action > .green {
+  background-color: var(--green);
+  color: white;
+}
+
+.book_shelf > .book_list > .book-item > .action > .red {
+  background-color: darkred;
+  color: white;
+}
